@@ -1,0 +1,199 @@
+@import url("leg_css.css");
+/* Color pallette
+Light Blue  #cee2e9
+Gray        #73767d
+Bright Red  #cc240e
+Red         #811005
+Dark Red    #470204
+*/
+
+body{
+
+
+}
+.leg_Shell{
+    
+}
+.leg_Masthead{border-color: #540902}
+#revisor_masthead{background-image: url('/images/banner_revisor.png')}
+#revisor_masthead a{
+/*    font-size: 1px;
+    position: relative;
+    left:-100%;
+    width: 200%;
+    height: 100%;*/
+display: none;
+}
+#house_masthead, #senate_masthead{
+    background-image: url('/images/banner3_fade3_to20.png');
+}
+#house_masthead a, #senate_masthead a, #house_masthead a:visted, #senate_masthead a:visited{
+    color: #000;
+}
+/* Path overrides*/
+.leg_FirstNav .leg_IconLeg {background-image:url('/images/icon_cap.png');}
+.leg_FirstNav .leg_IconConn {background-image: url('/images/icon_social.png')}
+.leg_FirstNav .leg_IconAbout {background-image: url('/images/icon_info.png')}
+.leg_FirstNav .leg_IconMobile {background-image: url('/images/icon_mobile.png')}
+.leg_ButtonSearch {background:transparent url('/images/icon_search.png') no-repeat;}
+a.leg_OfficeNavTop {background:url('/images/arrow_dropdown.png') no-repeat 100% 35%;}
+.leg_UseMobile .leg_mobile_Accordion {background-image:url('/images/accordion_arrowdown.png');}
+.leg_UseMobile .leg_mobile_Accordion_Expanded {background-image:url('/images/accordion_close.png');}
+.leg_UseMobile .leg_mobile_NavHeader {background-image:url('/images/accordion_arrowdown.png');}
+.leg_UseMobile .leg_mobile_NavHeader_Expanded {background-image:url('/images/accordion_close.png');}
+/*End Path Overrides*/
+
+/*Guides*/
+.leg_Shell{background: repeat-y; background-size:980px auto; background-position: 10px 60px}
+#guide-selector {display:none}
+/*End Guides*/
+.leg_OfficeNav{border-color: #540902}
+/*.leg_OfficeNav .leg_NavItem {border-left: 1px solid #000}*/
+.leg_OfficeNav .leg_NavItem a {padding-bottom: 4px}
+.leg_OfficeNav .leg_NavItem li {border-left: none}
+.leg_OfficeNav select{margin: 0px}
+.leg_LegNav, .leg_PageFooterAddr{background-color:#811005;border-color:#540902;}
+.leg_PageFooter {border-color:#540902;}
+/*.leg_PageContent h2{font-family: Arial}*/
+.leg_PageContent {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    padding-top: 20px
+}
+.leg_PageContent p {font-size: inherit; line-height: inherit;}
+.leg_PageContent h1 {font: 32px/40px Georgia; padding: 0px; margin-bottom: 20px;color:#470204}
+.leg_PageContent h2 {font: 24px/40px Georgia; padding: 0px; margin-bottom: 6px}
+.leg_PageContent h3 {font: 18px/20px Georgia; padding: 0px; margin-bottom: 20px}
+.leg_PageContent a:link {color: #811005;text-decoration:underline}
+.leg_PageContent a:visited {color: #470204;}
+.leg_PageContent a:active {color: red;}
+.leg_PageContent a:hover {color: #660000;text-decoration: none;}
+.leg_PageContent li a:link {text-decoration: none}
+.leg_PageContent ul{padding: 0px;margin:0px 0px 20px 0px;list-style: square inside}
+.leg_PageContent li{padding:0px;margin: 0px;line-height: 20px}
+.leg_PageContent table{/*width:100%;*/margin-top: 16px}
+.leg_PageContent table.guided td{border-bottom: solid 1px #ccc;}
+.leg_PageContent table caption {font-size: 1px; position:absolute; right:-999px}
+.leg_PageContent th {text-align:left;padding-bottom: 2px;padding-right: 1em;border-bottom: solid 1px #000;}
+.leg_PageContent th a:link, .leg_PageContent th a:visited, .leg_PageContent th a:active {color: #000;text-decoration: none;}
+.leg_PageContent th.sub {padding-top: 1em;}
+.leg_PageContent td {padding: 3px 0px; /*padding: 0.2em 1em 0.2em 0em;*/}
+.leg_PageContent td.inactive {font-style: italic;}
+
+.leg_PageContent .leg_Pane {width: 20%; margin: 0px 0px 20px 25px}
+.leg_PageContent .leg_PaneHeader {background: #811005;}
+.leg_PageContent .leg_PaneContent h2 {font-size: 16px; line-height:20px; margin-bottom: 0px;border-bottom:1px solid #000}
+.leg_PageContent .leg_PaneContent ul {padding: 4px 0px}
+.leg_PageContent .leg_PaneContent div {margin-bottom: 20px}
+.leg_PageContent .leg_PaneContent div ul{margin-bottom: 0px}
+a.desc, a.asc {
+	padding-right: 20px;
+}
+a.desc {
+	background: transparent url('../images/sort_desc.gif') no-repeat right center;
+}
+a.asc {
+	background: transparent url('../images/sort_asc.gif') no-repeat right center;
+}
+p.indent{text-indent: 2em;}
+p.rss, p.pdf, p.full, p.top_right, p.help, p.print {
+  float: right;
+/*  font-size: 1.4em;*/
+  margin-top: 0em;
+}
+p.rss a, p.pdf a, p.full a, p.top_right a, p.help a, p.print a {
+  display: block;  
+  padding: 5px 10px 5px 23px;
+  text-align: right;
+}
+a.pdf {padding: 0px 10px 0px 23px}
+p.print{padding:0px;width:20px;overflow:hidden;}
+p.rss a {background: url('../images/icon_rss.gif') no-repeat left center;}
+p.pdf a, a.pdf {background: url('../images/pdf.gif') no-repeat left center;}
+p.full a {background: url('../images/note.gif') no-repeat left center;}
+p.help a {background: url('../images/questionmark_red.gif') no-repeat left center;}
+p.print a {background: url('../images/print.gif') no-repeat left center;}
+p.key {border-bottom: 1px solid #000;margin-bottom: 40px}
+
+#doctype {margin-right: 4px;}
+#breadcrumb {font-size: 12px;margin: -20px 0px 20px 0px; border-bottom: 1px solid #999}
+#breadcrumb ul {padding: 2px 0px; margin: 0px 0px 0px -10px}
+#breadcrumb li {display: inline; border: none; padding: 0px 6px 0px 10px; background: url('/images/seperator.png') no-repeat 0px 3px}
+#breadcrumb a:visited {color: #903}
+#breadcrumb a:hover {text-decoration: underline}
+span.highlight{background-color: yellow;}
+span.highlight a {background-color: #fff;text-decoration: none;}
+span.highlight a.hl_prev {background: #fff url('../images/arrow_prev.gif') no-repeat right center;}
+span.highlight a.hl_next {background: #fff url('../images/arrow_next.gif') no-repeat right center;}
+
+#additional_info {float:right;width: 20em;padding:.5em;margin:0em 0em 1em 1em;border:1px solid #990033}
+#additional_info h1, #additional_info h2 {font-family: arial, 'san-serif'}
+#additional_info h1 {font-size: 1.4em; margin: 0em}
+.leg_pagecontent #additional_info h2 {font-size: 18px; margin: .5em 0em 0em 0em}
+#additional_info h2 a:link, #additional_info h2 a:active, #additional_info h2 a:visited {color: #600;background: none;text-decoration: underline;}
+#additional_info h2 a:hover {color: #666;}
+#additional_info ul {margin:0em;list-style-image: none;}
+#additional_info ul li {margin:.25em 0em}
+#resources ul {list-style: none}
+#resources li {border-bottom:1px solid #999}
+
+ul.letters {
+	list-style-image: none;
+	font-weight: bold;
+	margin: 0em 0em 1em 0em;
+}
+ul.letters li {
+	display: inline;
+	margin: 0em .1em;
+}
+ul.letters li a{
+	padding: 0em .3em;
+	border: 1px solid #000;
+	text-decoration: none;
+}
+ul.letters li a:visited{
+	color:#930;
+}
+ul.letters li a:hover{
+	color: #fff;
+	background-color: #930;
+}
+ul.topics {
+	list-style-image: none;
+}
+ul.topics li{
+	margin: .5em 0em;
+}
+#doc_nav {margin: -20px 0px 20px 0px}
+a.previous {
+	background: url('/images/arrow_prev.gif') no-repeat left center;
+    padding-left: 14px; 
+}
+a.next {
+	background: url('/images/arrow_next.gif') no-repeat right center;
+    float:right;
+    padding-right: 14px; 
+}
+
+.leg_PageContent table.zebra .alternate {
+background-color: #DDD;
+}
+
+#house_banner, #senate_banner {height: 60px; background: #6f6f33 url('/images/house_banner_small.png') no-repeat center center; border-bottom: 2px solid #424211;}
+#senate_banner {background-image: url('/images/senate_banner_small.png');background-color: #243c88}
+#house_banner h1, #senate_banner h1 {display:none;font: 3em 'Times New Roman'; color: #fff;border-top: 4px solid #fff;border-bottom: 4px solid #fff;letter-spacing: .05em;text-align: center}
+
+#xtend h1, #xtend h2, #xtend h3, #xtend h4, #xtend h5, #xtend h6 {
+  font-family: 'times new roman', serif;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0px;
+}
+
+#warning {background-color: #ff5;margin: -20px 0px 20px 0px; padding: 4px 10px; font-size: 12px; border: 1px solid #000;}
+
+a.mybills {padding: 0px 0px 0px 30px;}
+.house_bill a.mybills {background: transparent url('/images/mybillsplus_green.jpg') no-repeat left center}
+.senate_bill a.mybills {background: transparent url('/images/mybillsplus_blue.jpg') no-repeat left center}
+img.beta_icon {position: relative;top: 5px; left: 10px }

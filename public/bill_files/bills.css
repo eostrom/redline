@@ -1,0 +1,82 @@
+@import url("doc.css");
+/*
+#masthead {
+  background: transparent url(../images/revisorWhite.jpg) no-repeat scroll 0%;
+} */
+#xtend {
+  margin: 0em;
+}
+
+
+#xtend p {line-height: inherit; margin:0em}
+#xtend div.bill_title p {text-indent: 12em}
+
+#xtend h2, #xtend h3, #xtend h4, #xtend h5, #xtend h6 {
+  font-weight: normal;
+  margin-right: .2em;
+  font-family: inherit;
+  font-size: 1em;
+  border-bottom: none;
+}
+#xtend.statute h1 {
+  border-bottom: none;
+  margin-left: 0em;
+}
+#xtend.chapter h1.shn {display: none}
+h1.headnote {text-align: left;}
+h1.repealed {display: inline;}
+#xtend h2.section_number {margin: 0em 0em 0em 2em;}
+#xtend h2.statute_section_number {margin: 0em 0em 0em 2em;}
+
+h2.headnote, h2.effective_date {
+  display: inline;
+}
+h2.subd .headnote, h2.effective_date {
+  margin-left: .2em;
+  font-weight: bold;
+}
+#xtend div.history {
+	font-style: italic;
+	margin: .5em 0em;
+}
+#xtend div.history h2 {
+	display: inline;
+	font-weight: bold;
+	font-style: normal;
+	margin-left: 2em;
+}
+
+div.section {}
+div.subd {}
+div.subd p.see_note{font-weight: bold; font-style: italic}
+
+
+
+
+#chapter_analysis ul{
+	list-style: none;
+	list-style-image: none;
+}
+#chapter_analysis ul li a{
+	margin-right: 1em;
+}
+#chapter_analysis ul h4{
+	margin: .5em 0em;
+}
+/* applies only to old HTML */
+div.xtend {
+	width: 46em;
+    padding: 2em 6em;
+}
+.leg_PageContent var {
+    position: absolute;
+    left: 0px;
+  font-style: normal;
+  width: 5em;
+}
+#line_numbers var.ln{ display: block; float: none}
+div.bill_title p {margin: 0em}
+
+#versions {margin-bottom: 20px}
+#versions table {width: 50%;}
+#versions table td {white-space: nowrap;}

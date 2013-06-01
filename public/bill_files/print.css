@@ -1,0 +1,9 @@
+@import url("leg_cssprint.css");
+
+#page_nav, #nav_left, #nav_right, #document_options, #controls, #footer, 
+.hidden, .print, .noprint, p.pdf, .full,
+#xtend a.hl_prev, #xtend a.hl_next, #xtend p.hl_summary, #additional_info, p.alert,
+div.leg_Pane, #breadcrumb, #doc_nav{
+  display:none;
+}
+#leg_PageContent {width:100%;font-size:13pt;}
