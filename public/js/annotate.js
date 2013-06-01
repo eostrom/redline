@@ -1,1 +1,2 @@
-$('.xtend').annotator();
+$('.xtend').annotator()
+  .annotator('addPlugin', 'Vote');
