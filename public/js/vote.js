@@ -56,7 +56,7 @@
         return this.annotator.plugins.Filter.addFilter({
           label: Annotator._t('Vote'),
           property: 'vote',
-          isFiltered: Annotator.Plugin.Tags.filterCallback
+          isFiltered: Annotator.Plugin.Vote.filterCallback
         });
       }
     };
@@ -100,28 +100,8 @@
 
   })(Annotator.Plugin);
 
-  Annotator.Plugin.Vote.filterCallback = function(input, tags) {
-    var keyword, keywords, matches, tag, _i, _j, _len, _len1;
-    if (tags == null) {
-      tags = [];
-    }
-    matches = 0;
-    keywords = [];
-    if (input) {
-      keywords = input.split(/\s+/g);
-      for (_i = 0, _len = keywords.length; _i < _len; _i++) {
-        keyword = keywords[_i];
-        if (tags.length) {
-          for (_j = 0, _len1 = tags.length; _j < _len1; _j++) {
-            tag = tags[_j];
-            if (tag.indexOf(keyword) !== -1) {
-              matches += 1;
-            }
-          }
-        }
-      }
-    }
-    return matches === keywords.length;
+  Annotator.Plugin.Vote.filterCallback = function(input, vote) {
+    return !input || (vote[0] === input[0].toUpperCase());
   };
 
 }).call(this);

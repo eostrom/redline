@@ -40,14 +40,12 @@ class Annotator.Plugin.Vote extends Annotator.Plugin
       load: this.updateViewer
     })
 
-    # TODO: MAKE THIS WORK
-    #
     # Add a filter to the Filter plugin if loaded.
     if @annotator.plugins.Filter
       @annotator.plugins.Filter.addFilter
         label: Annotator._t('Vote')
         property: 'vote'
-        isFiltered: Annotator.Plugin.Tags.filterCallback
+        isFiltered: Annotator.Plugin.Vote.filterCallback
 
     # TODO: UPDATE DOCUMENTATION
     #
@@ -112,27 +110,13 @@ class Annotator.Plugin.Vote extends Annotator.Plugin
     else
       field.remove()
 
-# TODO: CHANGE TAGS TO VOTE
+# Checks an input string against a vote. If the vote and the input begin with
+# the same letter, this returns true.  This should be used as a callback in the
+# Filter plugin.
 #
-# Checks an input string of keywords against an array of tags. If the keywords
-# match _all_ tags the function returns true. This should be used as a callback
-# in the Filter plugin.
+# input - an input string
+# vote - a vote
 #
-# input - A String of keywords from a input field.
-#
-# Examples
-#
-#   Tags.filterCallback('cat dog mouse', ['cat', 'dog', 'mouse']) //=> true
-#   Tags.filterCallback('cat dog', ['cat', 'dog', 'mouse']) //=> true
-#   Tags.filterCallback('cat dog', ['cat']) //=> false
-#
-# Returns true if the input keywords match all tags.
-Annotator.Plugin.Vote.filterCallback = (input, tags = []) ->
-  matches  = 0
-  keywords = []
-  if input
-    keywords = input.split(/\s+/g)
-    for keyword in keywords when tags.length
-      matches += 1 for tag in tags when tag.indexOf(keyword) != -1
-
-  matches == keywords.length
+# Returns true if the input starts with the same letter as the vote.
+Annotator.Plugin.Vote.filterCallback = (input, vote) ->
+  !input || (vote[0] == input[0].toUpperCase())
